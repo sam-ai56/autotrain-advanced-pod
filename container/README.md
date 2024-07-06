@@ -14,7 +14,7 @@ Also along with AutoTrain comes JupyterLab.
     JUPYTER_PASSWORD = (PASSWORD)               !
     ----------------------------------------------
     AUTOTRAIN_PORT   = 7860 (default)
-    JUPITER_PORT     = 8888 (default)
+    JUPYTER_PORT     = 8888 (default)
     ----------------------------------------------
 
 If HF_TOKEN is not set, AutoTrain will not start properly. Same with Jupyter.
@@ -22,4 +22,4 @@ If HF_TOKEN is not set, AutoTrain will not start properly. Same with Jupyter.
 ## PORTS
 
 - 7860/tcp (AutoTrain UI)
-- 8888/tcp (JupiterLab)
+- 8888/tcp (JupyterLab)

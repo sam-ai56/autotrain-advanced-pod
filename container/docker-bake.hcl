@@ -66,7 +66,7 @@ target "cuda12" {
         logo = "../container-template"
     }
     args = {
-        BASE_IMAGE = "nvidia/cuda:12.5.0-devel-ubuntu22.04"
+        BASE_IMAGE = "nvidia/cuda:12.1.1-devel-ubuntu22.04"
         PYTHON_VERSION = "3.10"
         TORCH = "torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1"
     }

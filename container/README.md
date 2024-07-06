@@ -1,14 +1,25 @@
-## Build Options
+## AutoTrain Advanced Pod
 
-To build with default options, run `docker buildx bake`, to build a specific target, run `docker buildx bake <target>`.
+This container contains AutoTrain Advanced that works with Kubernetes pods.
+Also along with AutoTrain comes JupyterLab.
 
-## Ports
-
-- 7860/tcp (AutoTrain UI)
-- 8888/tcp (Jupyter Lab)
+## Useful Links
+* [GitHub Repo](https://github.com/sam-ai56/autotrain-advanced-pod)
+* [AutoTrain Repo](https://github.com/huggingface/autotrain-advanced)
+* [Find HF_TOKEN](https://huggingface.co/settings/tokens)
 
 ## ENV
-(HF_TOKEN)
-(JUPYTER_PASSWORD)
-AUTOTRAIN_PORT
-JUPYTER_PORT
+    ----------------------------------------------
+    HF_TOKEN         = (YOUR HUGGINGFACE TOKEN) !!
+    JUPYTER_PASSWORD = (PASSWORD)               !
+    ----------------------------------------------
+    AUTOTRAIN_PORT   = 7860 (default)
+    JUPITER_PORT     = 8888 (default)
+    ----------------------------------------------
+
+If HF_TOKEN is not set, AutoTrain will not start properly. Same with Jupyter.
+
+## PORTS
+
+- 7860/tcp (AutoTrain UI)
+- 8888/tcp (JupiterLab)
